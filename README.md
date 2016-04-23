@@ -1,16 +1,37 @@
-# BeltFedNPCs
-Used to quickly generate NPC's with backgrounds and quirks.<br>
-NPC is also given a random class and race. Weighted random is used to balance the frequency of race occurances, favoring humans to appear the most. <br>
-Program pulls data from names.json and backgrounds.json. <br>
-First name is pulled from a json object found in names.json. Feel free to add more to the list, but I would avise <br>
-to keep them gender neutral.<br>
-Last name is randomly generated from two arrays found in names.json. feel free to add to the lists as you wish.<br>  
-I plan on adding more quirks and maneurisms as I go, but if you have any ideas then that would be great as well. <br>
-I also plan on developing a precompiler that would allow for each background to exist as it's own json file that <br>
-get collected together into a single file at compile.<br>
-<br>
-<br>
-Format for adding additional backgrounds to the backgrounds.json file:<br>
+# Belt Fed NPCs
+
+##### Used to quickly generate NPCs with backgrounds and quirks.
+
+### 😈 [See it in action](http://paulvmoreau.github.io/BeltFedNPCs/)
+
+---
+
+## About
+
+NPCs are given reasonably weighted random races and other background details.
+
+Names are created from a random first name and combined surnames to create a unique last name.
+
+## Planned Improvements
+ 
+I plan on adding more quirks and maneurisms as I go, but if you have any ideas then that would be great as well.
+
+I also plan on developing a precompiler that would allow for each background to exist as it's own json file that get collected together into a single file at compile.
+
+## Help the Project Grow
+
+### Names
+
+_(data/names.json)_
+
+Feel free to add additional names, respecting gender neutrality produces the best results.
+
+### Backgrounds
+
+_(data/backgrounds.json)_
+
+Example background layout:
+
 ```json
 {
       "title": "Background Title",

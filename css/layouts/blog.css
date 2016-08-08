@@ -89,6 +89,22 @@ h3 {
     padding: 2em 1em 0;
 }
 
+#npc:not(.ready) {
+    display: none;
+}
+
+#placeholder {
+    display: block;
+    height: 30rem;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+#placeholder:hover {
+    opacity: .5;
+}
+
 .post {
     padding-bottom: 2em;
 }

@@ -44,6 +44,10 @@ function load(){
 function generateCharacter(){
   var data = generator.generate();
 
+  if(document.getElementById('emptyState')) {
+      document.getElementById('emptyState').remove();
+      document.getElementById('npc').className += ' ready';
+  }
   document.getElementById('characterName').textContent = data.name +', the ' +data.gender +' ' +data.race +' ' + data.class;
   document.getElementById('classSymbol').src = 'img/common/DnD5E_ClassSymb_'+data.class+'.jpg';
   document.getElementById('background-type').textContent = data.backgroundType;
@@ -88,3 +92,8 @@ function generateCharacter(){
 
   compileQuirks();
 }
+
+/**
+ * On page load...
+ */
+document.getElementById('placeholder').src = 'img/placeholders/' + Math.ceil(Math.random()*5) + '.svg';
